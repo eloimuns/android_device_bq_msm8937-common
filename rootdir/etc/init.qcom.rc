@@ -360,7 +360,6 @@ on property:persist.debug.trace=1
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
 on property:vold.decrypt=trigger_restart_framework
-    start config_bt_addr
     start wcnss-service
 
 on property:persist.env.fastdorm.enabled=true
@@ -388,12 +387,6 @@ service rmt_storage /system/vendor/bin/rmt_storage
 service tftp_server /system/vendor/bin/tftp_server
    class core
    user root
-
-service config_bt_addr /system/vendor/bin/btnvtool -O
-    class core
-    user bluetooth
-    group bluetooth radio
-    oneshot
 
 service hciattach /vendor/bin/init.qcom.bt.sh
     class late_start
