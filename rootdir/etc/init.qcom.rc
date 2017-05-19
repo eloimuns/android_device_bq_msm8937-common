@@ -25,8 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import init.qcom.usb.rc
-import init.target.rc
+import /vendor/etc/init/hw/init.qcom.usb.rc
+import /vendor/etc/init/hw/init.target.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -56,7 +56,7 @@ on early-boot
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
-    exec u:r:qti_init_shell:s0 -- /init.qcom.early_boot.sh
+    exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
     # Graphics
     chown system graphics /sys/class/graphics/fb0/idle_time
@@ -398,7 +398,7 @@ service config_bt_addr /system/bin/btnvtool -O
     group bluetooth radio
     oneshot
 
-service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
+service hciattach /vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
@@ -467,12 +467,12 @@ service loc_launcher /system/bin/loc_launcher
     class late_start
     group gps inet qcom_diag wifi
 
-service qcom-sh /system/bin/sh /init.qcom.sh
+service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     oneshot
 
-service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
+service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
     disabled
