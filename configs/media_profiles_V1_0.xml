@@ -129,7 +129,7 @@
              channels="1" />
     </EncoderProfile>
 
-    <EncoderProfile quality="vga" fileFormat="mp4" duration="30">
+<!--     <EncoderProfile quality="vga" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="2000000"
              width="640"
@@ -140,7 +140,7 @@
              bitRate="156000"
              sampleRate="48000"
              channels="2" />
-    </EncoderProfile>
+    </EncoderProfile>-->
 
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -213,7 +213,7 @@
              channels="1" />
     </EncoderProfile>
 
-    <EncoderProfile quality="timelapsevga" fileFormat="mp4" duration="30">
+ <!--    <EncoderProfile quality="timelapsevga" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="2000000"
              width="640"
@@ -225,7 +225,7 @@
              bitRate="12200"
              sampleRate="8000"
              channels="1" />
-    </EncoderProfile>
+    </EncoderProfile>-->
 
     <EncoderProfile quality="timelapse480p" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -421,7 +421,7 @@
              channels="1" />
     </EncoderProfile>
 
-     <EncoderProfile quality="vga" fileFormat="mp4" duration="30">
+<!--  <EncoderProfile quality="vga" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="2000000"
              width="640"
@@ -432,7 +432,7 @@
              bitRate="156000"
              sampleRate="48000"
              channels="2" />
-    </EncoderProfile>
+    </EncoderProfile>-->
 
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
       <Video codec="h264"
@@ -503,7 +503,7 @@
              channels="1" />
     </EncoderProfile>
 
-    <EncoderProfile quality="timelapsevga" fileFormat="mp4" duration="30">
+<!--   <EncoderProfile quality="timelapsevga" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="2000000"
              width="640"
@@ -515,7 +515,7 @@
              bitRate="12200"
              sampleRate="8000"
              channels="1" />
-    </EncoderProfile>
+    </EncoderProfile>-->
 
     <EncoderProfile quality="timelapse480p" fileFormat="mp4" duration="30">
       <Video codec="h264"
