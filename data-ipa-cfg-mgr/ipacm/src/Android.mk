@@ -64,7 +64,6 @@ LOCAL_SRC_FILES := IPACM_Main.cpp \
 		IPACM_OffloadManager.cpp
 
 LOCAL_MODULE := ipacm
-LOCAL_CLANG := false
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SHARED_LIBRARIES := liboffloadhal
@@ -87,7 +86,6 @@ LOCAL_SHARED_LIBRARIES += libhwbinder \
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)
 
-LOCAL_CLANG := true
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)

@@ -26,7 +26,6 @@ LOCAL_CFLAGS += -Wall -Werror
 LOCAL_CFLAGS += -DFEATURE_IPA_ANDROID
 LOCAL_MODULE := libipanat
 LOCAL_MODULE_TAGS := optional
-LOCAL_CLANG := true
 include $(BUILD_SHARED_LIBRARY)
 
 endif # $(TARGET_ARCH)
