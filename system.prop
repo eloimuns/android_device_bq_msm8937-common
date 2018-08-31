@@ -25,10 +25,10 @@ audio.safx.pbe.enabled=true
 #flac sw decoder 24 bit decode capability
 flac.sw.decoder.24bit.support=true
 #Disable speaker protection by default
-persist.speaker.prot.enable=false
-persist.audio.fluence.speaker=false
-persist.audio.fluence.voicecall=false
-persist.audio.fluence.voicerec=false
+persist.vendor.speaker.prot.enable=false
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicerec=false
 #fluencetype can be "fluence" or "fluencepro" or "none"
 ro.qc.sdk.audio.fluencetype=fluence
 ro.qc.sdk.audio.ssr=false
