@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8937
+    android.hardware.light@2.0-service.aw2013 
 
 # Misc
 PRODUCT_PACKAGES += \
