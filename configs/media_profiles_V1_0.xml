@@ -220,7 +220,7 @@
              height="480"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      <!- audio setting is ignored ->
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
@@ -510,7 +510,7 @@
              height="480"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
+      <!- audio setting is ignored ->
       <Audio codec="amrnb"
              bitRate="12200"
              sampleRate="8000"
