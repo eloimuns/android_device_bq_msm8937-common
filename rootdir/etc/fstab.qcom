@@ -21,4 +21,6 @@
 
 # Storage
 /devices/soc/7864900.sdhci/mmc_host*        /storage/sdcard1 vfat    nosuid,nodev                                                                                   wait,voldmanaged=sdcard1:auto,noemulatedsd,encryptable=footer
+/devices/platform/soc/7864900.sdhci/mmc_host*        /storage/sdcard1 vfat    nosuid,nodev                                                                          wait,voldmanaged=sdcard1:auto,noemulatedsd,encryptable=footer
 /devices/soc/78db000.usb/msm_hsusb_host*    /storage/usbotg  vfat    nosuid,nodev                                                                                   wait,voldmanaged=usbotg:auto
+/devices/platform/soc/78db000.usb/msm_hsusb_host*    /storage/usbotg  vfat    nosuid,nodev                                                                          wait,voldmanaged=usbotg:auto
